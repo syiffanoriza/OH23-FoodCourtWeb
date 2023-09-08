@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+:root {
+    --mainPadding: 2.5em 2em;
+    --paddingRight: 0 2em 1.5em 0;
+    --paddingLeft: 0 0 1.5em 2em;
+    --textPrimary: #1E5392;
+}
+
+body {
+    color: var(--textPrimary);
+}
+
+ul {
+    list-style: none;
+}
+
+hr.line {
+    border-color: var(--textPrimary);
+}
+
+h2.text {
+    padding: 0 0 1.5em 1em;
+}
+
+header {
+    padding: var(--mainPadding);
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+/* -- SECTIONS -- */
+
+section#food, section#drink {
+    padding: var(--paddingLeft);
+}
+
+section#sideDish {
+    padding: var(--paddingRight);
+}
+
+.title {
+    align-self: flex-start;
+}
+
+div.imageLeft {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+div.imageRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+div.imageRight img, div.imageLeft img {
+    height: 90%;
+    width: auto;
+}
+
+.sectionWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.listWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.3em;
+}
+
+@media screen and (max-width: 1024px) {
+/* DO SOON */
+}
